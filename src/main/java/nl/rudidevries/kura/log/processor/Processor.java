@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 public class Processor implements ConfigurableComponent {
 	private static final Logger s_logger = LoggerFactory.getLogger(Processor.class);
-    private static final String APP_ID = "Processor";
+    private static final String APP_ID = "log";
     
     private static final String LOG_PATH_PROP_NAME = "logfile.path";
     private static final String LOG_REGEX_PROP_NAME = "logfile.regex";
