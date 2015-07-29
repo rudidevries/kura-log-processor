@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="nl.rudidevries.kura.log.processor.Processor"
+        name="Log Processor"
+        description="Processing contents of a logfile, and send wanted information to a MQTT broker.">
+
+        <AD id="logfile.path" 
+            name="logfile.path"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="/var/log/logfile.log" 
+            description="Path to the log file."/>
+            
+        <AD id="logfile.regex" 
+            name="logfile.regex"
+            type="String"
+            cardinality="0"
+            required="true"
+            default=".*MAC address (.*) (secured|disconnected).*" 
+            description="Regex for lines in logfile. Each group can be used as part of the topic, or be used as the message."/>
+            
+         <AD id="logfile.topic.groups" 
+            name="logfile.topic.groups"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="1" 
+            description="Forward slash (/) separated list of groups from the regex to be used to build the topic string."/>
+            
+         <AD id="logfile.message.group" 
+            name="logfile.message.group"
+            type="String"
+            cardinality="0"
+            required="true"
+            default="2" 
+            description="Group number of match from regex string to be used as the message."/>
+            
+            
+    </OCD>
+
+    <Designate pid="nl.rudidevries.kura.log.processor.Processor">
+        <Object ocdref="nl.rudidevries.kura.log.processor.Processor"/>
+    </Designate>
+</MetaData>

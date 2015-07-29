@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: log-processor
+Bundle-SymbolicName: log-processor
+Bundle-Version: 1.0.0.qualifier
+Export-Package: nl.rudidevries.kura.log.processor

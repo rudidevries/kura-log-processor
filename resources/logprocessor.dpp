@@ -1,0 +1,20 @@
+#Deployment Plugin Project File
+#Wed Jul 29 15:11:51 CEST 2015
+build.ant.name=<.>/resources/logprocessor_build.xml
+build.dp.file=<.>/resources/logprocessor.dp
+build.location=
+bundles.0.bundle_path=<.>/target/log-processor-0.0.1-SNAPSHOT.jar
+bundles.0.customizer=false
+bundles.0.headers.count=0
+bundles.0.missing=false
+bundles.0.name=bundles/log-processor-0.0.1-SNAPSHOT.jar
+bundles.0.symbolic_name=nl.rudidevries.kura.log-processor;singleton\:\=true
+bundles.0.version=0.0.1.SNAPSHOT
+bundles.count=1
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=logprocessor
+headers.version=1.0.0
+resources.count=0
+
